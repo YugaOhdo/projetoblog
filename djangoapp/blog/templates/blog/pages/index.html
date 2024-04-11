@@ -1,0 +1,25 @@
+{% extends "../partials/base.html" %}
+
+
+{% block content %}
+  <main class="main-content section-wrapper">
+    <div class="section-content-wide">
+      <div class="section-gap">
+      
+      {% if posts %}
+        <div class="card-grid">
+          {% for post in posts %}
+            {% include 'blog/partials/_post-card.html' with i=forloop.counter0 %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div>
+          <h1> Nada encontrado </h1>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </main>
+
+
+{% endblock content %}
