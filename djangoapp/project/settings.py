@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     if h.strip()
 ]
 
-
+DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -138,10 +138,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #/data/web/static
-STATIC_ROOT = DATA_DIR / 'static'
+STATIC_ROOT = "/srv/http/static/"
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = DATA_DIR / 'media'
+MEDIA_ROOT = "/srv/http/media/
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
