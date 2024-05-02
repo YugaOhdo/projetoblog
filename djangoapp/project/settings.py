@@ -138,10 +138,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #/data/web/static
-STATIC_ROOT = "/srv/http/static/"
+# STATIC_ROOT = "/srv/http/static/"
+STATIC_ROOT = DATA_DIR / 'static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = "/srv/http/media/
+# MEDIA_ROOT = "/srv/http/media/
+MEDIA_ROOT = DATA_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
